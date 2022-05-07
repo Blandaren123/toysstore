@@ -228,9 +228,11 @@ input[name='q']::placeholder {
 
 /* mailchimp */
 
-#mc_embed_signup {
-    clear:left; font:14px Helvetica,Arial,sans-serif;  
-    width:500px;
+#mc_embed_signup form {
+    display: block;
+    position: relative;
+    text-align: left;
+    padding: 10px 0 10px 0%;
 }
 
 .allauth-form-inner-content button:hover,
