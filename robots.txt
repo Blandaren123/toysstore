@@ -1,0 +1,4 @@
+User.agent: *
+Disallow: /accounts/
+Disallow: /bag/
+Sitemap: https://toysstore-udd.herokuapp.com/sitemap.xml
