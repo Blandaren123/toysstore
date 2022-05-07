@@ -1,108 +1,165 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Toy Store
 
-Welcome Blandaren123,
+[Live application can be found here](https://toysstore-udd.herokuapp.com/)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+# Purpose of the project
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+The purpose of this page is for travelers to post their tips or tell about their travels.
+In a community, people can comment and plan their next vacation by posting where they want to go
+Or give advice based on places they've visited
+In other words, it's like a traveling community
 
-## Gitpod Reminders
+# User stories
+Here is Kanban for user story [here](https://github.com/Blandaren123/Django.P4/projects/2)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+1. As a Site user/ admin I can like or unlike post so That i can see what i like or unlike
+2. As a Admin I can Access my adming panel so That i can manage posts and comments
+3. As a User/Admin I can Delete Posts/comments so That i can delete post or comments if i regret
+4. As a User I can Click on a post so That I can View the deatails
+5. As a User I can create an account so That i Can Interact with other users or comment
+6. As a User/admin I can write html code so That get better styling in Post
+7. As a User I can only edit or delete my own post so That nobody can delete or edit my own post
+8. As a user I can edit my profile so That All my data is correct
+9. As a user I can change password so That if i want a new password i change
+10. As a User I can sign up/log in and comment so That other can see and up or down vote
 
-`python3 -m http.server`
+# Databases
+Easy sign up and posting for a blog community
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+![image info](/static/images/Datamodels.png)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+# Wireframes
+![image info](/static/images/wirframemo.PNG) ![image info](/static/images/wurreframewin.PNG)
 
-A blue button should appear to click: _Make Public_,
+With a design that follows through the theme of simplicity, the pages are divided by bootstrap columns and rows, and the layout is kept consistent so that the user feels at ease at all times.
 
-Another blue button should appear to click: _Open Browser_.
+# Features
+- __Navigation Bar__
+  * The navigation bar is fully responsive, allowing users to navigate easily.
+  * A fast and easy way to register and log in.
+  * Design with easy color and minimalist style.
+  * The navbar changes to add posts, edit profiles, and logout once you are logged in
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+![image info](/static/images/navbars.PNG)
 
-To log into the Heroku toolbelt CLI:
+- __Add Post__
+  * Minimal post additions
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+![image info](/static/images/post.PNG)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- __Comments__
+  * Everyone can comment easily and quickly
+ 
 
-------
+![image info](/static/images/comments.PNG)
 
-## Release History
+- __Click to View__
+  * Simply click a post to open it and read it
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+![image info](/static/images/clicker.PNG)
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+# Futures implement
+  * A picture gallery section with inspiration for different places
+  * An online booking system to book Vacation.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+# Typography and color scheme
+- Color: white, gray and almost pink background
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+# Technology
+- Wireframes for layout on desktop and mobile in Balsamiq tools.
+- This site was laid out and structured using HTML, Python, Javascript, Django
+- Style and appearance using CSS.
+- Use Github to deploy the project and read the README.
+- Gitpod is used for coding.
+- CodeInstuite project, YouTube, and Google for tutorials and troubleshooting.
+- Skype for contact with the mentor for tips and advice. 
+- jigsaw, W3c and lighthouse for testing and troubleshoot.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+# Testing
+- ## I Used manual testing for this Project
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+- I tested this side on Microsoft edge and Chrome and it seems to works great.
+- The page is viewable on desktops, iPads, and phones when I tested.
+- I can confirmed All sections such as the navigation bar section are operational and easy to use.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+- ## As Guest 
+- Can enter post and comments with name.
+- click to view the post.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+- ## As Registered and Logged in User
+- Can like a post
+- Can change and edit your own Post
+- Can Edit profile and Change password
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+- ## Test Person 
+- let my Friends and family test to see if it works as it should.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+- __Bugs__
+- Wrote templates wrong when so it doesnt find the files
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+![image info](/static/images/bug.PNG)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+- Write Templates on the right way
+- solving with this 
 
-------
+![image info](/static/images/bugfix.PNG) worked fine
 
-## FAQ about the uptime script
+# Validator Testing 
 
-**Why have you added this script?**
+## HTML and CSS
+- No Error on the official 
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
 
-**How will this affect me?**
+![image info](/static/images/Wc3.PNG)
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+## Accessbility
+- It's confirmed that the colors and fonts chosen are readable in devtools when tested through Lighthouse
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+![image info](/static/images/lighthouse.PNG)
 
-**So….?**
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+## Python
+- Pep8 test
+Had only lines to long nothing more
 
-**Can I opt out?**
+![image info](/static/images/pep8test.PNG)
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+# Unfixed Bugs
+Yes i have this on site that i cant fix in Edit Profile
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+![image info](/static/images/Buuugs.PNG)
 
-**Anything more?**
+# Deployment
+I used Gitpod to develop the project. I contributed all changes to git version control, and I saved changes to GitHub using the push command in Gitpod.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+## Heroku
+Ensure your project has these two files before building a Heroku app: requirements.txt - This is created by pip3 freeze --local > requirements.txt Procfile - This is created by echo web: python run.py > Procfile
 
----
+## Setting up deployment
+- DATABASE_URL must be added to settings.py temporarily:
+- To migrate the database models in the project to the Postgres database, run the following command: python3 manage.py migrate
+- check git.ignore if env.py is there
+- If you want your Heroku app to be deployed directly from a Github repository, you can do so as follows: On the deploy tab of your Heroku app, select GitHub - Connect to GitHub. If not already logged in, sign up with GitHub. We will then prompt you to find a Github repository to connect to.
 
-Happy coding!
+- To deploy your app to Heroku click the "Deploy Branch" button.
+
+
+# Credits
+## Contents
+- Bootsraps was taken from [here](https://getbootstrap.com/)
+- youtuber tutorial [here](https://www.youtube.com/playlist?list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi).
+- Slacks for some bug fixes
+- Cloudinary [here](https://cloudinary.com/?utm_source=google&utm_medium=cpc&utm_campaign=Rbrand&utm_content=483362991544&utm_term=cloudinary&gclid=Cj0KCQiA95aRBhCsARIsAC2xvfwkb-wCh-OYhKE-Xy-ND5gOUxKzbTvIo_3zJCxu0V9aNLUKTfFftl4aAjqTEALw_wcB). for easy upload
+
+## Media
+- some Post picture was taken from [pexels](https://www.pexels.com/sv-se/)
+
+# Acknowledgements
+- my mentor, I receive support, advice, and feedback.
+- Slack for all the help with Bug and advice
+- Friends and Family that test it
