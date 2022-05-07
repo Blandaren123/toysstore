@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url('/media/back.jpg') no-repeat center center fixed;
+    background: url('/media/back3.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
@@ -224,6 +224,13 @@ input[name='q']::placeholder {
 
     /* standard bootstrap btn transitions */
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+/* mailchimp */
+
+#mc_embed_signup {
+    clear:left; font:14px Helvetica,Arial,sans-serif;  
+    width:500px;
 }
 
 .allauth-form-inner-content button:hover,
