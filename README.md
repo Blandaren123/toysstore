@@ -1,16 +1,19 @@
 # Toy Store
+![image info](/media/responsive1.PNG)
 
 [Live application can be found here](https://toysstore-udd.herokuapp.com/)
 
 # Purpose of the project
 
-The purpose of this page is for travelers to post their tips or tell about their travels.
-In a community, people can comment and plan their next vacation by posting where they want to go
-Or give advice based on places they've visited
-In other words, it's like a traveling community
+Basically, this is an e-commerce site that sells mostly toys, but also a few other kid-related products.
+
+
+Users are free to create accounts or just buy without one, and admin have full access to the site as a site owner
+
+Users can test the card by entering 4242 4242 4242 4242 - and at the end, a 5-number postal code can be entered.
 
 # User stories
-Here is Kanban for user story [here](https://github.com/Blandaren123/Django.P4/projects/2)
+Here is Kanban for user story [here](https://github.com/Blandaren123/toysstore/projects/1)
 
 1. As a Site user/ admin I can like or unlike post so That i can see what i like or unlike
 2. As a Admin I can Access my adming panel so That i can manage posts and comments
