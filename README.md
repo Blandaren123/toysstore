@@ -194,7 +194,7 @@ Ensure your project has these two files before building a Heroku app: requiremen
 # Credits
 ## Contents
 - Bootstraps was taken from [here](https://getbootstrap.com/)
-- Code in institue, botique ado project followed it and made some change
+- Took the most of the codes from Code in institue, botique ado project followed it and made some change
 - Slacks for some help when i had some problem
 - Ubuy for some pictures and describtions [here](https://www.ubuy.com.se/en/)
 - H&M for describtions [here](https://www2.hm.com/en_gb/index.html)
