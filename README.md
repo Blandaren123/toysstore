@@ -21,60 +21,78 @@ Users can test the card by entering 4242 4242 4242 4242 - and at the end, a 5-nu
 # User stories
 Here is Kanban for user story [here](https://github.com/Blandaren123/toysstore/projects/1)
 
-1. As a Site user/ admin I can like or unlike post so That i can see what i like or unlike
-2. As a Admin I can Access my adming panel so That i can manage posts and comments
-3. As a User/Admin I can Delete Posts/comments so That i can delete post or comments if i regret
-4. As a User I can Click on a post so That I can View the deatails
-5. As a User I can create an account so That i Can Interact with other users or comment
-6. As a User/admin I can write html code so That get better styling in Post
-7. As a User I can only edit or delete my own post so That nobody can delete or edit my own post
-8. As a user I can edit my profile so That All my data is correct
-9. As a user I can change password so That if i want a new password i change
-10. As a User I can sign up/log in and comment so That other can see and up or down vote
+1. As a Owner I can Add, Edit and Remove product so That Easy to take out old and add new stuff
+2. As a Siteuser I can search in the searchbar so That it's easy to find what i searchs for
+3. As a siteuser I can rate so That people know if how good or bad this products is
+4. As a Siteuser I can select size so That i can fins the best size to buy
+5. As a admin/siteowner I can delete product so That if i dont want it in my shop
+6. As a Buyer I can get confirmation mail when i purchase so That i know the purchase was done
+7. As a Admin/siteowner I can remove users so That if it gets to much accounts
+8. As a User I can my billing adress so That i odnt have to enter again
+9. As a User/buyer I can add in the shopping cart so That it's easy to buy more fast
+10. As a User I can click on site's facebooks business page so That I Can Follow Them
+11. As a Admin I can add product so That if i want to add new product in the shop
+12. As a User I can Register an Account so That I Can Have a personal account with my profile
+13. As a User I can Login or logout so That I can Access My account
+14. As a site user I can view the policy so That user know what policy the site have
+15. As a User I can Recover my password so That i can access my again if I lost my password
+16. As a Buyer I can View the products so That I can select some to Purchase
+17. As a Buyer I can View Product individual details so That I can see the price, description of the product and product image
+18. As a Buyer I can See how much i have in my shopping bag so That i can see how much everything in total and what product i have put in
+19. As a User I can register for newsletter so That I can recieve news on products or campaigns
+
 
 # Databases
-Easy sign up and posting for a blog community
+Easy-to-use ecommerce site 
 
 
-![image info](/static/images/Datamodels.png)
+![image info](/media/datastrucctures1.PNG)
 
 # Wireframes
-![image info](/static/images/wirframemo.PNG) ![image info](/static/images/wurreframewin.PNG)
+![image info](/media/wireframesdesk.PNG) ![image info](/media/wireframesphone.PNG)
 
-With a design that follows through the theme of simplicity, the pages are divided by bootstrap columns and rows, and the layout is kept consistent so that the user feels at ease at all times.
+Following the theme of simplicity, the pages are divided by bootstrap columns and rows, and the layout stays consistent so that the user feels at ease at all times.
 
 # Features
 - __Navigation Bar__
   * The navigation bar is fully responsive, allowing users to navigate easily.
   * A fast and easy way to register and log in.
   * Design with easy color and minimalist style.
-  * The navbar changes to add posts, edit profiles, and logout once you are logged in
+  * The navbar menu changes to dropdown when it is smaller screen
 
-![image info](/static/images/navbars.PNG)
+![image info](/media/nav1desk.PNG)
 
-- __Add Post__
-  * Minimal post additions
+![image info](/media/nav1desk2.PNG)
 
-![image info](/static/images/post.PNG)
+![image info](/media/navphone.PNG)
 
-- __Comments__
-  * Everyone can comment easily and quickly
+
+- __Categories__
+  * Categories with easy-to-filter products
+
+![image info](/media/kategories1.PNG)
+
+- __Home__
+  * Buy now button for fast buy
+  * Social link for Facebook
+  * Subscribe if you want news letter
  
 
-![image info](/static/images/comments.PNG)
+- __Add to Bag__
+  * It's easy to add and buy both for those who have signed up and those who haven't
 
-- __Click to View__
-  * Simply click a post to open it and read it
+- __Shopping Bag__
+  * The shopping bag shows how much you have added, or you can click it for more information
 
-![image info](/static/images/clicker.PNG)
-
+- __Popup message__
+  * Throughout the site, you will see a pop-up message or alert
 
 # Futures implement
-  * A picture gallery section with inspiration for different places
-  * An online booking system to book Vacation.
+  * A system to keep track of how many products you have and when something is out of stock
+  * A comment system so people can give comment about the products
 
 # Typography and color scheme
-- Color: white, gray and almost pink background
+- Color: white, black and big backgorund for homepage
 
 # Technology
 - Wireframes for layout on desktop and mobile in Balsamiq tools.
@@ -94,54 +112,69 @@ With a design that follows through the theme of simplicity, the pages are divide
 - The page is viewable on desktops, iPads, and phones when I tested.
 - I can confirmed All sections such as the navigation bar section are operational and easy to use.
 
-- ## As Guest 
-- Can enter post and comments with name.
-- click to view the post.
+- ## As Guest/Anonym user
+- News and campaigns about products can be subscribed to
+- Click and view products and fast buy
+- Mail sent with orderdetail what you have purchase
 
 - ## As Registered and Logged in User
-- Can like a post
-- Can change and edit your own Post
+- Can edit profiles
+- Can change password
 - Can Edit profile and Change password
+- See Order history
+- Set default Delivery informations
+
+- ## As Admin/siteowner
+- Can delete products
+- Can Edit products
+- Can Add products
+- Delete user
+- Add new categories
 
 - ## Test Person 
 - let my Friends and family test to see if it works as it should.
+- I have tested too and everythings seems to work fine
 
 
-- __Bugs__
-- Wrote templates wrong when so it doesnt find the files
+ # Bugs
+- No Nugs wehre found
 
-![image info](/static/images/bug.PNG)
-
-- Write Templates on the right way
-- solving with this 
-
-![image info](/static/images/bugfix.PNG) worked fine
 
 # Validator Testing 
-
-## HTML and CSS
-- No Error on the official 
-
-
-![image info](/static/images/Wc3.PNG)
-
 
 ## Accessbility
 - It's confirmed that the colors and fonts chosen are readable in devtools when tested through Lighthouse
 
-![image info](/static/images/lighthouse.PNG)
+![image info](/media/lighthouse.PNG)
 
 
 ## Python
-- Pep8 test
+- flake8 test
 Had only lines to long nothing more
 
-![image info](/static/images/pep8test.PNG)
 
 # Unfixed Bugs
-Yes i have this on site that i cant fix in Edit Profile
 
-![image info](/static/images/Buuugs.PNG)
+- No unfixed bugs
+
+
+# Other Services
+
+## stripe
+- For payment system
+
+## AWS3
+- For Media and css files
+
+## Mailship
+- For subsribtions
+
+## Facebook
+- For businesspage 
+
+## GDPR privacy policy generator
+- For policy
+
 
 # Deployment
 I used Gitpod to develop the project. I contributed all changes to git version control, and I saved changes to GitHub using the push command in Gitpod.
@@ -160,15 +193,17 @@ Ensure your project has these two files before building a Heroku app: requiremen
 
 # Credits
 ## Contents
-- Bootsraps was taken from [here](https://getbootstrap.com/)
-- youtuber tutorial [here](https://www.youtube.com/playlist?list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi).
-- Slacks for some bug fixes
-- Cloudinary [here](https://cloudinary.com/?utm_source=google&utm_medium=cpc&utm_campaign=Rbrand&utm_content=483362991544&utm_term=cloudinary&gclid=Cj0KCQiA95aRBhCsARIsAC2xvfwkb-wCh-OYhKE-Xy-ND5gOUxKzbTvIo_3zJCxu0V9aNLUKTfFftl4aAjqTEALw_wcB). for easy upload
+- Bootstraps was taken from [here](https://getbootstrap.com/)
+- Code in institue, botique ado project followed it and made some change
+- Slacks for some help when i had some problem
+- Ubuy for some pictures and describtions [here](https://www.ubuy.com.se/en/)
+- H&M for describtions [here](https://www2.hm.com/en_gb/index.html)
+
 
 ## Media
 - some Post picture was taken from [pexels](https://www.pexels.com/sv-se/)
 
 # Acknowledgements
 - my mentor, I receive support, advice, and feedback.
-- Slack for all the help with Bug and advice
+- Slack for all the help and advices
 - Friends and Family that test it
