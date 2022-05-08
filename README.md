@@ -3,6 +3,12 @@
 
 [Live application can be found here](https://toysstore-udd.herokuapp.com/)
 
+
+
+![image info](/media/fbsocial.PNG)
+
+[facebooksite](https://www.facebook.com/Toysstore-111655058205295/?ref=pages_you_manage)
+
 # Purpose of the project
 
 Basically, this is an e-commerce site that sells mostly toys, but also a few other kid-related products.
