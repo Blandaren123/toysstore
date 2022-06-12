@@ -1,0 +1,35 @@
+<!-- 404 error page, shown if user requests a page that doesn't exist. -->
+
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_title %}Error{% endblock %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col mt-3">
+                <h2 class="logo-font">404 Error <i class="fas fa-exclamation-triangle"></i></h2>
+                <hr class="mb-1">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center mt-5">
+                <h3 class="text-orange">Sorry - The page you requested doesn't exist.</h3>
+                <p class="text-white my-4">Try navigating above back home<a href="{% url 'home' %}" class="btn btn-orange mt-3 mt-md-0">Go back to Home</a></p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+{% endblock %}
