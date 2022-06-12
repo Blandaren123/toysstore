@@ -90,6 +90,12 @@ Following the theme of simplicity, the pages are divided by bootstrap columns an
 - __Popup message__
   * Throughout the site, you will see a pop-up message or alert
 
+- __404 error__
+  * Made 404 page 
+![image info](/media/404page.PNG)
+
+
+
 # Futures implement
   * A system to keep track of how many products you have and when something is out of stock
   * A comment system so people can give comment about the products
