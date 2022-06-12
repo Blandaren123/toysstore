@@ -145,7 +145,11 @@ Following the theme of simplicity, the pages are divided by bootstrap columns an
 
 # Validator Testing 
 
-## wc3
+## W3C HTML
+- html validator no error
+![image info](/media/htmlvalidator.PNG)
+
+## w3C Jigsaws
 - base css no error
 ![image info](/media/basecss.PNG)
 
@@ -163,7 +167,7 @@ Had only lines to long nothing more
 # Unfixed Bugs
 
 - No unfixed bugs
-
+- Only line longer then 50 character
 
 # Other Services
 
@@ -184,6 +188,7 @@ Had only lines to long nothing more
 
 
 # Deployment
+
 I used Gitpod to develop the project. I contributed all changes to git version control, and I saved changes to GitHub using the push command in Gitpod.
 
 ## Heroku
