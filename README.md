@@ -233,6 +233,10 @@ setups in settings.py
 3. Connect to the Heroku git remote using: heroku git:remote -a <YOURHEROKUAPPNAME>
 4. when you deploy you need to type: git push heroku main.
 
+#### Heroku Settings Environments Variables 
+- In settings tab and click Reveal Config vars and set following:
+![image info](/media/configvar.PNG)
+
 # Credits
 ## Contents
 - Bootstraps was taken from [here](https://getbootstrap.com/)
