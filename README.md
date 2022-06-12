@@ -166,7 +166,6 @@ Had only lines to long nothing more
 
 # Unfixed Bugs
 
-- No unfixed bugs
 - Only line longer then 50 character
 
 # Other Services
@@ -175,7 +174,7 @@ Had only lines to long nothing more
 - For payment system
 
 ## AWS3
-- For Media and css files
+- For Media and css files, HTML
 
 ## Mailship
 - For subsribtions
@@ -189,7 +188,20 @@ Had only lines to long nothing more
 
 # Deployment
 
-I used Gitpod to develop the project. I contributed all changes to git version control, and I saved changes to GitHub using the push command in Gitpod.
+## Github and Gitpod
+1. Access your Github Account and look for [Code-institute-templace](https://github.com/Code-Institute-Org/gitpod-full-template)
+2. Click the "Use this template" button beside the green button that says "Gitpod".
+3. Add repository name and description(optional).
+4. Click the Create repository from template.
+5. now you can click on the green Gitpod button when the repository hade been created.
+6. It is best to open the workspace from Gitpod (rather than Github) to open your previous workspace rather than creating a new one when working on a project
+7. dont forget to pin in Gitpod so the workspace wont get deleted.
+8. Committing your work often and using clear/explanatory messages is recommended; you can do this using the following commands:
+- git add .: adds all modified files to a staging area
+- git commit -m "A message explaining your commit": commits all changes to a local repository.
+- git push: pushes all your committed changes to your Github repository.
+
+
 
 ## Heroku
 Ensure your project has these two files before building a Heroku app: requirements.txt - This is created by pip3 freeze --local > requirements.txt Procfile - This is created by echo web: python run.py > Procfile
