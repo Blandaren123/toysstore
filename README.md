@@ -40,6 +40,7 @@ Here is Kanban for user story [here](https://github.com/Blandaren123/toysstore/p
 17. As a Buyer I can View Product individual details so That I can see the price, description of the product and product image
 18. As a Buyer I can See how much i have in my shopping bag so That i can see how much everything in total and what product i have put in
 19. As a User I can register for newsletter so That I can recieve news on products or campaigns
+20. As a Admin I can **add, edit and remove ** so That i can add new products, edit them or delete it
 
 
 # Databases
@@ -76,8 +77,10 @@ Following the theme of simplicity, the pages are divided by bootstrap columns an
   * Buy now button for fast buy
   * Social link for Facebook
   * Subscribe if you want news letter
- 
 
+- __About__
+  * Little about the page.
+  
 - __Add to Bag__
   * It's easy to add and buy both for those who have signed up and those who haven't
 
