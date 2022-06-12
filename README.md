@@ -80,7 +80,7 @@ Following the theme of simplicity, the pages are divided by bootstrap columns an
 
 - __About__
   * Little about the page.
-  
+
 - __Add to Bag__
   * It's easy to add and buy both for those who have signed up and those who haven't
 
@@ -119,6 +119,7 @@ Following the theme of simplicity, the pages are divided by bootstrap columns an
 - News and campaigns about products can be subscribed to
 - Click and view products and fast buy
 - Mail sent with orderdetail what you have purchase
+- Can read about me page
 
 - ## As Registered and Logged in User
 - Can edit profiles
@@ -138,12 +139,15 @@ Following the theme of simplicity, the pages are divided by bootstrap columns an
 - let my Friends and family test to see if it works as it should.
 - I have tested too and everythings seems to work fine
 
-
- # Bugs
+# Bugs
 - No Nugs wehre found
 
 
 # Validator Testing 
+
+## wc3
+- base css no error
+![image info](/media/basecss.PNG)
 
 ## Accessbility
 - It's confirmed that the colors and fonts chosen are readable in devtools when tested through Lighthouse
