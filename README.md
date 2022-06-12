@@ -171,19 +171,31 @@ Had only lines to long nothing more
 # Other Services
 
 ## stripe
-- For payment system
+  Stripe was used to take payments for this online store; you need to create a Stripe account first and then add the HTML, Python, JS, and other code you need to implement your needs in their documentation.
+  For setup[link](https://stripe.com/docs/payments/quickstart)
+  Here is the setup in Settings.py
+   ![image info](/media/stripe.PNG)
 
 ## AWS3
-- For Media and css files, HTML
+Using Amazon AWS S3, I store all static and media files for this site. I created a bucket, user group, and user that have access to this site and its files. In order for the files to be correctly served the following settings have to be added to your main settings.py file.
+here is the setup in settings.py
+![image info](/media/AWS3.PNG)
+
 
 ## Mailship
-- For subsribtions
+Was used to create the newsletter signup form. so i can get subscriber
 
 ## Facebook
-- For businesspage 
+- Business page was created on [Facebook](https://www.facebook.com/Toysstore-111655058205295/?ref=pages_you_manage)
 
 ## GDPR privacy policy generator
 - For policy
+
+## Gmail SMTP
+I used Gmail SMTP to send confirmation emails and all allauth related emails.
+I Used This [links](https://kb.synology.com/en-global/SRM/tutorial/How_to_use_Gmail_SMTP_server_to_send_emails_for_SRM) for setup
+setups in settings.py
+![image info](/media/gmail.PNG)
 
 
 # Deployment
@@ -202,23 +214,24 @@ Had only lines to long nothing more
 - git push: pushes all your committed changes to your Github repository.
 
 ## Forking Github Repository
-### To clone or Fork repository
+#### To clone or Fork repository
 1. Find/Access your or relevant Github repository
 2. Clock on "Fork" on the top right of the page
 3. Your repository has now been "Forked" and you will find a copy of the repository in your Github account.
 
 
 ## Heroku
+#### This application has been deployed from Github to Heroku
+1. create an account or log in if you are registered already [Heroku](https://dashboard.heroku.com/apps)
+2. Create a new app, add the app name and your region and click on create app.
 
+#### You can create the files required for Heroku to install your project dependencies by typing pip3 freeze --local > requirements.txt in the Gitpod CLI. Please note this file should be added to a .gitignore file to prevent the file from being committed. A Procfile is also required that specifies the commands that are executed by the app on startup.
 
-## Setting up deployment
-- DATABASE_URL must be added to settings.py temporarily:
-- To migrate the database models in the project to the Postgres database, run the following command: python3 manage.py migrate
-- check git.ignore if env.py is there
-- If you want your Heroku app to be deployed directly from a Github repository, you can do so as follows: On the deploy tab of your Heroku app, select GitHub - Connect to GitHub. If not already logged in, sign up with GitHub. We will then prompt you to find a Github repository to connect to.
-
-- To deploy your app to Heroku click the "Deploy Branch" button.
-
+#### because of security breach on Heroku, you have to use this command below to connect and deploy to Heroku.
+1. Login to Heroku via CLI using: heroku login -i
+2. Enter your Heroku email and password
+3. Connect to the Heroku git remote using: heroku git:remote -a <YOURHEROKUAPPNAME>
+4. when you deploy you need to type: git push heroku main.
 
 # Credits
 ## Contents
