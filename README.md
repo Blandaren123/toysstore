@@ -201,10 +201,15 @@ Had only lines to long nothing more
 - git commit -m "A message explaining your commit": commits all changes to a local repository.
 - git push: pushes all your committed changes to your Github repository.
 
+## Forking Github Repository
+### To clone or Fork repository
+1. Find/Access your or relevant Github repository
+2. Clock on "Fork" on the top right of the page
+3. Your repository has now been "Forked" and you will find a copy of the repository in your Github account.
 
 
 ## Heroku
-Ensure your project has these two files before building a Heroku app: requirements.txt - This is created by pip3 freeze --local > requirements.txt Procfile - This is created by echo web: python run.py > Procfile
+
 
 ## Setting up deployment
 - DATABASE_URL must be added to settings.py temporarily:
