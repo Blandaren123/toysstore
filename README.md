@@ -55,6 +55,7 @@ Easy-to-use ecommerce site
 Following the theme of simplicity, the pages are divided by bootstrap columns and rows, and the layout stays consistent so that the user feels at ease at all times.
 
 # Features
+
 - __Navigation Bar__
   * The navigation bar is fully responsive, allowing users to navigate easily.
   * A fast and easy way to register and log in.
