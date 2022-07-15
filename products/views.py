@@ -1,6 +1,6 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404
-from django.contrib import messages
+from django.shortcuts import render, reverse, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 
@@ -9,7 +9,10 @@ from .forms import ReviewForm, ProductForm
 
 
 def all_products(request):
-    """ A view to show all products, including sorting and search queries """
+    """
+    A view to return the products page,
+    including sorting and search queries
+    """
 
     products = Product.objects.all()
     query = None
@@ -40,10 +43,12 @@ def all_products(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(
+                    request, "You have not entered any search criteria!")
                 return redirect(reverse('products'))
 
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            queries = Q(name__icontains=query) | Q(
+                description__icontains=query)
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
@@ -59,7 +64,9 @@ def all_products(request):
 
 
 def product_detail(request, product_id):
-    """ A view to show individual product details """
+    """
+    A view to return the dedicated product page with product description
+    """
 
     product = get_object_or_404(Product, pk=product_id)
     form = ReviewForm()
@@ -70,6 +77,7 @@ def product_detail(request, product_id):
     }
 
     return render(request, 'products/product_detail.html', context)
+
 
 @login_required
 def add_review(request, product_id):
@@ -98,6 +106,125 @@ def add_review(request, product_id):
 
     return render(request, context)
 
+
+@login_required
+def edit_review(request, review_id):
+    """
+    A view to allow the users to edit their own review
+    """
+
+    review = get_object_or_404(ProductReview, pk=review_id)
+    product = review.product
+
+    if request.method == 'POST':
+        form = ReviewForm(request.POST, instance=review)
+        if form.is_valid():
+            form.save()
+            messages.info(request, 'Review has been changed')
+            return redirect(reverse('product_detail', args=[product.id]))
+        else:
+            messages.error(
+                request, 'Review edit failed, Please try again')
+
+    else:
+        form = ReviewForm(instance=review)
+
+    messages.info(request, 'You are editing your review')
+    template = 'products/product_detail.html'
+    context = {
+        'form': form,
+        'review': review,
+        'product': product,
+        'edit': True,
+    }
+    return render(request, template, context)
+
+
+@login_required
+def add_product(request):
+    """
+    A view to allow admins to add new products
+    """
+
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store admins can do that.')
+        return redirect(reverse('home'))
+
+    if request.method == 'POST':
+        # Check to see if the form being submitted is valid
+        form = ProductForm(request.POST, request.FILES)
+        if form.is_valid():
+            product = form.save()
+            messages.success(request, 'Product added successfully')
+            return redirect(reverse('product_detail', args=[product.id]))
+        else:
+            messages.error(
+                request,
+                'Error adding product, please check the the form is valid')
+    else:
+        form = ProductForm()
+
+    template = 'products/add_product.html'
+    context = {
+        'form': form
+    }
+
+    return render(request, template, context)
+
+
+@login_required
+def edit_product(request, product_id):
+    """
+    A view to edit a product that already exists within the store
+    """
+
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
+    product = get_object_or_404(Product, pk=product_id)
+    # Check to see if the form being submitted is valid
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES, instance=product)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Product updated successfully')
+            return redirect(reverse('product_detail', args=[product.id]))
+        else:
+            messages.error(
+                request,
+                'Failed to update product, Please check the form is valid')
+    else:
+        form = ProductForm(instance=product)
+        messages.info(request, f'You are editing {product.name}')
+
+    template = 'products/edit_product.html'
+    context = {
+        'form': form,
+        'product': product
+    }
+
+    return render(request, template, context)
+
+
+@login_required
+def delete_product(request, product_id):
+    """
+    A view to delete a product from the store
+    """
+
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
+    product = get_object_or_404(Product, pk=product_id)
+    # Used to store the products reviews
+    reviews = product.reviews.all()
+    product.delete()
+    # Delete reviews after product is deleted
+    reviews.delete()
+    messages.success(request, 'Product deleted successfully')
+    return redirect(reverse('products'))
 
 @login_required
 def edit_review(request, review_id):
