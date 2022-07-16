@@ -41,6 +41,8 @@ Here is Kanban for user story [here](https://github.com/Blandaren123/toysstore/p
 18. As a Buyer I can See how much i have in my shopping bag so That i can see how much everything in total and what product i have put in
 19. As a User I can register for newsletter so That I can recieve news on products or campaigns
 20. As a Admin I can **add, edit and remove ** so That i can add new products, edit them or delete it
+21. As a User I can write a comment or rate so That people know how good products is or give a thought
+22. As a User I can use wishlist so That i can save it for later
 
 
 # Databases
@@ -99,7 +101,7 @@ Following the theme of simplicity, the pages are divided by bootstrap columns an
 
 # Futures implement
   * A system to keep track of how many products you have and when something is out of stock
-  * A comment system so people can give comment about the products
+
 
 # Typography and color scheme
 - Color: white, black and big backgorund for homepage
@@ -118,9 +120,24 @@ Following the theme of simplicity, the pages are divided by bootstrap columns an
 # Testing
 - ## I Used manual testing for this Project
 
+- sign up works and gets confirm mail
+- ![image info](/media/signup.PNG)
+- ![image info](/media/confirm.PNG)
+- ![image info](/media/logged.PNG)
+
+
+
+
+
+
+
+
+
+- ## confirmation
 - I tested this side on Microsoft edge and Chrome and it seems to works great.
 - The page is viewable on desktops, iPads, and phones when I tested.
 - I can confirmed All sections such as the navigation bar section are operational and easy to use.
+
 
 - ## As Guest/Anonym user
 - News and campaigns about products can be subscribed to
@@ -154,7 +171,7 @@ Following the theme of simplicity, the pages are divided by bootstrap columns an
 
 ## W3C HTML
 - html validator no error
-![image info](/media/htmlvalidator.PNG)
+![image info](/media/htmls.PNG)
 
 ## w3C Jigsaws
 - base css no error
