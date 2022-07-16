@@ -126,11 +126,22 @@ Following the theme of simplicity, the pages are divided by bootstrap columns an
 - ![image info](/media/logged.PNG)
 
 
+- Wishlist works and can only add if you logged in
+- ![image info](/media/wish1.PNG)
+- ![image info](/media/wish2.PNG)
+
+- Review works and edit review when logged in
+- ![image info](/media/review1.PNG)
+- ![image info](/media/review2.PNG)
+
+- order works, webhooks and mail confirm
+- ![image info](/media/order1.PNG)
+- ![image info](/media/webhooks.PNG)
+- ![image info](/media/mails.PNG)
 
 
-
-
-
+- Mailchimp works
+- ![image info](/media/mailchimp.PNG)
 
 
 - ## confirmation
@@ -164,7 +175,8 @@ Following the theme of simplicity, the pages are divided by bootstrap columns an
 - I have tested too and everythings seems to work fine
 
 # Bugs
-- No Nugs wehre found
+- After i add reviews and wishlist, got error 500
+- solution was i didnt migrate to heroku.
 
 
 # Validator Testing 
